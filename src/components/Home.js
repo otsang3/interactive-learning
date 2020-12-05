@@ -7,7 +7,7 @@ function Home() {
     const renderCategories = () => {
         const categoriesArr = [];
         categories.map((category, index) => categoriesArr.push(
-            <ListItem key={index} category={category}/>
+            <ListItem key={index} category={category} link={category}/>
         ));
         return categoriesArr;
     }

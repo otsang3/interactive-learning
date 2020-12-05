@@ -9,7 +9,7 @@ function ListItem(props) {
 
     return(
         <div>
-            <Link to={props.category}>
+            <Link to={props.link}>
             <p>{capitaliseFirstLetter(props.category)}</p>
             </Link>
         </div>

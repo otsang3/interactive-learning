@@ -7,20 +7,16 @@ function Category(props) {
     const renderCategories = () => {
         const topicsArr = [];
         let index = 0;
+        let search = props.name.toLowerCase();
 
         for (let topic in topics) {
-            if (props.name.toLowerCase() === topic) {
+            if (search === topic) {
                 for (let subject in topics[topic]) {
                     topicsArr.push(
-                        <ListItem key={index} category={subject}/>
+                        <ListItem key={index} category={subject} link={`${search}/${subject}`}/>
                     )
                     index++;
                 }
-                // topics[props.name.toLowerCase()].map((subject, index) => {
-                //     topicsArr.push(
-                //         <ListItem key={index} category={subject}/>
-                //     )
-                // })
             }
         }
         return topicsArr;
