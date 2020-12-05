@@ -22,8 +22,8 @@ function Category(props) {
                 //     )
                 // })
             }
-            return topicsArr;
         }
+        return topicsArr;
     }
 
     return(
