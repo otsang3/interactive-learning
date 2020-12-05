@@ -10,6 +10,9 @@ function App() {
           <Route exact path="/" render={() => (
             <Home/>
           )}/>
+          <Route exact path="/:name" render={() => {
+
+          }}/>
         </Switch>
       </div>
     </Router>

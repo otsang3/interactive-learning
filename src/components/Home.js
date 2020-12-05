@@ -1,6 +1,6 @@
 import React from 'react';
 import { categories } from '../data/Data';
-import Category from './Category';
+import ListItem from './ListItem';
 
 function Home() {
 
@@ -11,7 +11,7 @@ function Home() {
     const renderCategories = () => {
         const categoriesArr = [];
         categories.map((category, index) => categoriesArr.push(
-            <Category key={index} category={capitaliseFirstLetter(category)}/>
+            <ListItem key={index} category={capitaliseFirstLetter(category)}/>
         ));
         return categoriesArr;
     }
@@ -22,7 +22,6 @@ function Home() {
             <div className="cat-container">
                 {renderCategories()}
             </div>
-            
         </div>
     );
 }
