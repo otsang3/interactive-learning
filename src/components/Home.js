@@ -4,14 +4,10 @@ import ListItem from './ListItem';
 
 function Home() {
 
-    const capitaliseFirstLetter = (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
     const renderCategories = () => {
         const categoriesArr = [];
         categories.map((category, index) => categoriesArr.push(
-            <ListItem key={index} category={capitaliseFirstLetter(category)}/>
+            <ListItem key={index} category={category}/>
         ));
         return categoriesArr;
     }
