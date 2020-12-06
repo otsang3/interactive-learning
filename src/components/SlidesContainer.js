@@ -1,10 +1,21 @@
 import React from 'react';
+import Slide from './Slide';
 
-function SlidesContainer() {
+function SlidesContainer(props) {
+
+    const renderSlides = () => {
+        const slidesArr = [];
+        props.slides.map((slide, index) => {
+            slidesArr.push(
+                <Slide content={slide} key={index}/>
+            )
+        })
+        return slidesArr;
+    }
 
     return(
         <div>
-            Slides loaded
+            {renderSlides()}
         </div>
     )
 }

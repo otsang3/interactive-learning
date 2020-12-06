@@ -23,7 +23,10 @@ function InteractiveDisplay(props) {
     )
 
     return(
-        <SlidesContainer slides={slides}/>
+        <div>
+            <SlidesContainer slides={slides}/>
+        </div>
+        
     )
 }
 
