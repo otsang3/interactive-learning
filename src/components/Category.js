@@ -25,7 +25,9 @@ function Category(props) {
     return(
         <div>
             <h2>Select a subject</h2>
-            {renderCategories()}
+                <div className="cat-container">
+                {renderCategories()}    
+                </div>   
         </div>
     )
 }

@@ -11,6 +11,9 @@ function ListItem(props) {
         <div>
             <Link to={props.link}>
             <p>{capitaliseFirstLetter(props.category)}</p>
+            <div className="img-container">   
+                <img/>
+            </div>
             </Link>
         </div>
         
