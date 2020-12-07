@@ -6,7 +6,6 @@ function InteractiveDisplay(props) {
 
     const initialState = {
         loadQuiz: false,
-        loadSlides: true
     };
 
     const [ state, setState ] = useState(initialState);
@@ -17,6 +16,12 @@ function InteractiveDisplay(props) {
     const slides = topics[category][topic].learningSlides;
     const quiz = topics[category][topic].quiz;
 
+    const loadQuiz = () => {
+        setState({
+            loadQuiz: true
+        })
+    }
+
     if (state.loadQuiz) 
     return(
         <p>Quiz loaded</p>
@@ -24,7 +29,7 @@ function InteractiveDisplay(props) {
 
     return(
         <div>
-            <SlidesContainer slides={slides}/>
+            <SlidesContainer loadQuiz={loadQuiz} slides={slides}/>
         </div>
         
     )

@@ -5,7 +5,7 @@ function SlidesContainer(props) {
 
     const initialState = {
         slides: props.slides,
-        slideNum: 0
+        slideNum: 1
     };
 
     const [ state, setState ] = useState(initialState);
@@ -28,11 +28,22 @@ function SlidesContainer(props) {
         })
     }
 
+    const handleStartQuiz = () => {
+        props.loadQuiz()
+    }
+
     return(
         <div>
-            {state.slides[state.slideNum]}
+            {state.slides[state.slideNum - 1]}
+            {state.slideNum > 1 &&
             <button onClick={handlePrevSlide}>Previous</button>
+            }
+            {state.slideNum < state.slides.length &&
             <button onClick={handleNextSlide}>Next</button>
+            }
+            {state.slideNum === state.slides.length &&
+            <button onClick={handleStartQuiz}>Start Quiz</button>
+            }
         </div>
     )
 }
