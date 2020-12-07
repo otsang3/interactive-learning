@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slide from './Slide';
 
 function SlidesContainer(props) {
 
-    const renderSlides = () => {
-        const slidesArr = [];
-        props.slides.map((slide, index) => {
-            slidesArr.push(
-                <Slide content={slide} key={index}/>
-            )
-        })
-        return slidesArr;
-    }
+    const initialState = {
+        slides: props.slides,
+        slideNum: 0
+    };
+
+    const [ state, setState ] = useState(initialState);
+
+    console.log(state.slides[state.slideNum]);
 
     return(
         <div>
-            {renderSlides()}
+            {state.slides[state.slideNum]}
         </div>
     )
 }
