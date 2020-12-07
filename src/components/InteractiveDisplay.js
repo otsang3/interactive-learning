@@ -13,8 +13,8 @@ function InteractiveDisplay(props) {
     const { match: { params: { category }} } = props.category;
     const { match: { params: { topic }} } = props.category;
 
-    const slides = topics[category][topic].learningSlides;
-    const quiz = topics[category][topic].quiz;
+    const slides = topics[category].subtopics[topic].learningSlides;
+    const quiz = topics[category].subtopics[topic].quiz;
 
     const loadQuiz = () => {
         setState({

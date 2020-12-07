@@ -7,12 +7,14 @@ function ListItem(props) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    console.log("../images" + props.imgUrl);
+
     return(
         <div>
             <Link to={props.link}>
             <p>{capitaliseFirstLetter(props.category)}</p>
             <div className="img-container">   
-                <img/>
+                <img src={'../images' + props.imgUrl} alt="broken"/>
             </div>
             </Link>
         </div>

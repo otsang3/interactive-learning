@@ -1,5 +1,5 @@
 import React from 'react';
-import { categories } from '../data/Data';
+import { categories, topics } from '../data/Data';
 import ListItem from './ListItem';
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
     const renderCategories = () => {
         const categoriesArr = [];
         categories.map((category, index) => categoriesArr.push(
-            <ListItem key={index} category={category} link={category}/>
+            <ListItem key={index} category={category} imgUrl={topics[category].imgUrl} link={category}/>
         ));
         return categoriesArr;
     }
