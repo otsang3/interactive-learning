@@ -12,13 +12,21 @@ export const topics = {
                     "slide 3"
                 ],
                 quiz: [{
-                    question: "what is the question?",
+                    question: "1. what is the question?",
                     answers: [
                         "answer 1",
                         "answer 2",
                         "answer 3"
                     ],
                     correctAnswer: "answer 1"
+                }, {
+                    question: "2. what is the question?",
+                    answers: [
+                        "answer 1",
+                        "answer 2",
+                        "answer 3"
+                    ],
+                    correctAnswer: "answer 2"
                 }]
             },
             sea: {

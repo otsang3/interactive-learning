@@ -8,8 +8,8 @@ function Quiz(props) {
 
         props.answers.map((answer, index) => {
             answersArr.push(
-                <div>
-                    <input type="radio" name="answer"/>
+                <div key={index}>
+                    <input type="radio" name="answer" value={answer}/>
                     <label>{answer}</label>
                 </div>
             )
@@ -18,10 +18,17 @@ function Quiz(props) {
         return answersArr;
     }
 
+    const handleChange = (event) => {
+        props.handleAnswer(event.target.value)
+    };
+
     return(
         <div>
             {props.question}
-            {renderAnswers()}
+            <form onChange={handleChange}>
+                {renderAnswers()}
+            </form>
+            
         </div>
     )
 }
