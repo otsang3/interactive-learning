@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { topics } from '../data/Data';
+import QuizContainer from './QuizContainer';
 import SlidesContainer from './SlidesContainer';
 
 function InteractiveDisplay(props) {
@@ -24,7 +25,7 @@ function InteractiveDisplay(props) {
 
     if (state.loadQuiz) 
     return(
-        <p>Quiz loaded</p>
+        <QuizContainer quiz={quiz}/>
     )
 
     return(
