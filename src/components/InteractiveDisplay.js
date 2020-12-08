@@ -6,7 +6,7 @@ import SlidesContainer from './SlidesContainer';
 function InteractiveDisplay(props) {
 
     const initialState = {
-        loadQuiz: false,
+        loadQuiz: false
     };
 
     const [ state, setState ] = useState(initialState);

@@ -11,14 +11,15 @@ function QuizContainer(props) {
         question: quiz[0].question,
         answers: quiz[0].answers,
         correctAnswer: quiz[0].correctAnswer,
-        score: 0
+        score: 0,
+        loadResult: false
     };
 
     const [ state, setState ] = useState(initialState);
 
     const handleAnswer = (answer) => {
 
-        if (answer = state.correctAnswer) {
+        if (answer === state.correctAnswer) {
             console.log("test");
             setState(prevState => {
                 return {
@@ -38,11 +39,21 @@ function QuizContainer(props) {
                     correctAnswer: quiz[prevState.questionNum].correctAnswer,
                 }
             })
+        } else {
+            loadResult();
         }
-       
     }
 
-    if (state.questionNum === quiz.length)
+    const loadResult = () => {
+        setState(prevState => {
+            return {
+                ...prevState,
+                loadResult: true
+            }
+        })
+    }
+
+    if (state.loadResult)
     return(
         <QuizResult/>
     )
