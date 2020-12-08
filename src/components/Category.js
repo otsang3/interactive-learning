@@ -12,8 +12,9 @@ function Category(props) {
         for (let topic in topics) {
             if (search === topic) {
                 for (let subject in topics[topic].subtopics) {
+                    const subtopic = topics[topic].subtopics[subject];
                     topicsArr.push(
-                        <ListItem key={index} category={subject} link={`${search}/${subject}`}/>
+                        <ListItem key={index} category={subject} imgUrl={subtopic.imgUrl} link={`${search}/${subject}`}/>
                     )
                     index++;
                 }

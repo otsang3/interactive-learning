@@ -7,7 +7,7 @@ function ListItem(props) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    console.log("../images" + props.imgUrl);
+    console.log(props);
 
     return(
         <div>

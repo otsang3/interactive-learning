@@ -5,6 +5,7 @@ export const topics = {
         imgUrl: '/animals.png',
         subtopics: {
             land: {
+                imgUrl: '/land-animals.png',
                 learningSlides: [
                     "slide 1",
                     "slide 2",
@@ -21,6 +22,7 @@ export const topics = {
                 }]
             },
             sea: {
+                imgUrl: '/sea-animals.png',
                 learningSlides: [
                     "slide 1",
                     "slide 2",
@@ -42,6 +44,7 @@ export const topics = {
         imgUrl: '/geography.png',
         subtopics: {
             cities: {
+                imgUrl: '/cities.png',
                 learningSlides: [
                     "slide 1",
                     "slide 2",
@@ -58,6 +61,7 @@ export const topics = {
                 }]
             },
             countries: {
+                imgUrl: '/countries.png',
                 learningSlides: [
                     "slide 1",
                     "slide 2",
@@ -79,6 +83,7 @@ export const topics = {
         imgUrl: '/science.png',
         subtopics: {
             chemistry: {
+                imgUrl: '/chemistry.png',
                 learningSlides: [
                     "slide 1",
                     "slide 2",
@@ -95,6 +100,7 @@ export const topics = {
                 }]
             },
             physics: {
+                imgUrl: '/physics.webp',
                 learningSlides: [
                     "slide 1",
                     "slide 2",

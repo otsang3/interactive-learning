@@ -16,11 +16,6 @@ h2 {
   text-align: center;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
-
 p {
   text-align: center;
 }
@@ -34,5 +29,10 @@ p {
 
 .img-container {
   height: 18em;
-  width: 25em;
+  width: 20em;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
 }
