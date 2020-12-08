@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Quiz from './Quiz';
 
 function QuizContainer(props) {
 
@@ -16,9 +17,7 @@ function QuizContainer(props) {
     console.log(state);
 
     return(
-        <div>
-
-        </div>
+        <Quiz question={state.question} answers={state.answers}/>
     )
 }
 
