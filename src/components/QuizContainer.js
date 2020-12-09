@@ -55,7 +55,7 @@ function QuizContainer(props) {
 
     if (state.loadResult)
     return(
-        <QuizResult/>
+        <QuizResult state={state} quiz={quiz}/>
     )
 
     return(

@@ -4,7 +4,7 @@ function QuizResult(props) {
 
     return(
         <div>
-            Quiz results
+            You answered {props.state.score} out of {props.quiz.length} questions correctly!
         </div>
     )
 }
