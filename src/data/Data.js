@@ -77,18 +77,34 @@ export const topics = {
             chemistry: {
                 imgUrl: '/chemistry.png',
                 learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
+                    "Chemistry is the science that deals with the composition and properties of substances and various elementary forms of matter. There are three states of matter - solid, liquid and gas.",
+                    "Elements are substances that cannot be broken down into further substances. These elements are listed under the Periodic Table. Examples of elements include hydrogen and oxygen.",
+                    "Atoms are the smallest unit of matter. They are made up of three particles - neutron, electron and proton"
                 ],
                 quiz: [{
-                    question: "what is the question?",
+                    question: "Which of the following is NOT a state of matter?",
                     answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
+                        "Solid",
+                        "Liquid",
+                        "Plasma"
                     ],
-                    correctAnswer: "answer 1"
+                    correctAnswer: "Plasma"
+                },{
+                    question: "The Periodic Table is a list that contains?",
+                    answers: [
+                        "Atoms",
+                        "Elements",
+                        "Neutrons"
+                    ],
+                    correctAnswer: "Elements"
+                },{
+                    question: "Which of the following is a particle of an atom?",
+                    answers: [
+                        "Hydrogen",
+                        "Neutron",
+                        "Oxygen"
+                    ],
+                    correctAnswer: "Neutron"
                 }]
             },
             physics: {
