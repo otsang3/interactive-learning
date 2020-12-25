@@ -130,7 +130,7 @@ export const topics = {
                         "Growth of diseases"
                     ],
                     correctAnswer: "Growth of diseases"
-                }{
+                },{
                     question: "What is the last step of the scientific method?",
                     answers: [
                         "Make observations and collect data",
