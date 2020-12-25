@@ -110,18 +110,34 @@ export const topics = {
             physics: {
                 imgUrl: '/physics.webp',
                 learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
+                    "The word 'Physics' comes from Greek, meaning nature. Physics is the study of the fundamental laws of nature. Physics can predict how nature will behave in certain situations",
+                    "The main areas of study within physics include - Mechanics, Thermodynamics, Optics, Relativity and Quantum Mechanics",
+                    "The scientific method generally involes 4 key steps. The first is to make observations and collect data. The next step is to formulate and objective test hypotheses by experiments. Then results are interpreted and hypothesis may need to be revised if necessary. Finally conclusions will need to be drawn in a form that can be evaluated by others."
                 ],
                 quiz: [{
-                    question: "what is the question?",
+                    question: "What does physics study?",
                     answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
+                        "Fundamental laws of nature",
+                        "State of matter",
+                        "Elements of the Periodic Table"
                     ],
-                    correctAnswer: "answer 1"
+                    correctAnswer: "Fundamental laws of nature"
+                },{
+                    question: "Which of the following is not an area of focus within Physics?",
+                    answers: [
+                        "Quantum Mechanics",
+                        "Thermodynamics",
+                        "Growth of diseases"
+                    ],
+                    correctAnswer: "Growth of diseases"
+                }{
+                    question: "What is the last step of the scientific method?",
+                    answers: [
+                        "Make observations and collect data",
+                        "Formulate and test hypothesis with experiements",
+                        "Draw conclusion from entire experiment"
+                    ],
+                    correctAnswer: "Draw conclusion from entire experiment"
                 }]
             }
         }
