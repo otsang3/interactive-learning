@@ -1,53 +1,6 @@
 export const categories = [ "animals", "geography", "science"];
 
 export const topics = {
-    animals: {
-        imgUrl: '/animals.png',
-        subtopics: {
-            land: {
-                imgUrl: '/land-animals.png',
-                learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
-                ],
-                quiz: [{
-                    question: "1. what is the question?",
-                    answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
-                    ],
-                    correctAnswer: "answer 1"
-                }, {
-                    question: "2. what is the question?",
-                    answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
-                    ],
-                    correctAnswer: "answer 2"
-                }]
-            },
-            sea: {
-                imgUrl: '/sea-animals.png',
-                learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
-                ],
-                quiz: [{
-                    question: "what is the question?",
-                    answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
-                    ],
-                    correctAnswer: "answer 1"
-                }]
-            }
-        } 
-    },
     geography: {
         imgUrl: '/geography.png',
         subtopics: {
