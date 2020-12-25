@@ -54,18 +54,34 @@ export const topics = {
             cities: {
                 imgUrl: '/cities.png',
                 learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
+                    "Tokyo is the largest city by land area - 8,547 km squared and by population - 37,393,000.",
+                    "Situated at 4,150 meters above sea level, El Alto (Bolivia) is the highest city in the world. The cities name literally means `The Heights` in English",
+                    "On the other hand, sitting at 258 meters below sea level, Jericho (Palestine) is the lowest city in the world. "
                 ],
                 quiz: [{
-                    question: "what is the question?",
+                    question: "What is the most populated city in the world?",
                     answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
+                        "Shanghai",
+                        "New York City",
+                        "Tokyo"
                     ],
-                    correctAnswer: "answer 1"
+                    correctAnswer: "Tokyo"
+                },{
+                    question: "How many meters does El Alto sit above sea level?",
+                    answers: [
+                        "3550",
+                        "4150",
+                        "4550"
+                    ],
+                    correctAnswer: "4150"
+                },{
+                    question: "What is the lowest city in the world?",
+                    answers: [
+                        "Jericho",
+                        "El Alto",
+                        "Delhi"
+                    ],
+                    correctAnswer: "Jericho"
                 }]
             },
             countries: {
