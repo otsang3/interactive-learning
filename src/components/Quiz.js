@@ -9,7 +9,7 @@ function Quiz(props) {
         props.answers.map((answer, index) => {
             answersArr.push(
                 <div key={index}>
-                    <input type="radio" name="answer" value={answer}/>
+                    <input type="radio" name="answer" checked="" value={answer}/>
                     <label>{answer}</label>
                 </div>
             )
