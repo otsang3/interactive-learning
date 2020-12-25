@@ -71,18 +71,33 @@ export const topics = {
             countries: {
                 imgUrl: '/countries.png',
                 learningSlides: [
-                    "slide 1",
-                    "slide 2",
-                    "slide 3"
+                    "There are 195 countries in the world. These countries are split into areas called continents. There are seven continents - Africa, Antartica, Asia, Australia, Europe, North America and South America.",
+                    "The vast majority of countries have a capital city. For example, the capital city of France is Paris."
                 ],
                 quiz: [{
-                    question: "what is the question?",
+                    question: "How many countries are there in the world?",
                     answers: [
-                        "answer 1",
-                        "answer 2",
-                        "answer 3"
+                        "190",
+                        "195",
+                        "200"
                     ],
-                    correctAnswer: "answer 1"
+                    correctAnswer: "195"
+                },{
+                    question: "Countries are grouped together in regions. What are these regions called?",
+                    answers: [
+                        "Capitals",
+                        "Cities",
+                        "Continents"
+                    ],
+                    correctAnswer: "Continents"
+                },{
+                    question: "What is the capital of France?",
+                    answers: [
+                        "London",
+                        "Paris",
+                        "Madrid"
+                    ],
+                    correctAnswer: "Paris"
                 }]
             }
         }
