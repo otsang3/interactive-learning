@@ -1,4 +1,4 @@
-export const categories = [ "animals", "geography", "science"];
+export const categories = [ "geography", "science"];
 
 export const topics = {
     geography: {
