@@ -36,3 +36,23 @@ p {
   height: 100%;
   width: 100%;
 }
+
+.slide-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.slide-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.test {
+  align-self: flex-end;
+  border: 1px solid black;
+  margin-right: 5em;
+  width: 10em;
+}

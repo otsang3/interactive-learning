@@ -33,8 +33,10 @@ function SlidesContainer(props) {
     }
 
     return(
-        <div>
+        <div className="slide-container">
             <p>{state.slides[state.slideNum - 1]}</p>
+
+            <div className="test">
             {state.slideNum > 1 &&
             <button onClick={handlePrevSlide}>Previous</button>
             }
@@ -44,6 +46,8 @@ function SlidesContainer(props) {
             {state.slideNum === state.slides.length &&
             <button onClick={handleStartQuiz}>Start Quiz</button>
             }
+            </div>
+            
         </div>
     )
 }
