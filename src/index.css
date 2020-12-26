@@ -60,6 +60,17 @@ p {
   width: 60%;
 }
 
+.slide-container button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+  padding: none;
+  text-shadow:0 0 4px rgba(255,255,255,0.6);
+}
+
 .test {
   align-self: flex-end;
   margin-right: 2.5em;
