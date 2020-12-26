@@ -37,22 +37,24 @@ p {
   width: 100%;
 }
 
-.slide-buttons {
+/* .slide-buttons {
   display: flex;
   align-items: center;
-}
+} */
 
 .slide-container {
-  border: 1px solid red;
+  border: 1px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 40vh;
+  justify-content: space-evenly;
   margin: 0 auto;
+  padding: 0em 2em;
   width: 60%;
 }
 
 .test {
   align-self: flex-end;
-  border: 1px solid black;
-  margin-right: 5em;
-  width: 10em;
+  margin-right: 2.5em;
 }
