@@ -23,8 +23,8 @@ function Quiz(props) {
     };
 
     return(
-        <div>
-            {props.question}
+        <div className="quiz-container">
+            <h4>{props.question}</h4>
             <form onChange={handleChange}>
                 {renderAnswers()}
             </form>

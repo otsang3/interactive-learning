@@ -42,7 +42,7 @@ p {
   align-items: center;
 } */
 
-.slide-container {
+.slide-container, .quiz-container {
   background-image: url('/src/images/chalkboard.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,6 +58,20 @@ p {
   padding: 0em 2em;
   text-shadow:0 0 4px rgba(255,255,255,0.6);
   width: 60%;
+}
+
+.quiz-container form {
+  margin: 0 2em;
+}
+
+.quiz-container h4 {
+  margin: 4em 0;
+  padding: 0;
+  text-align: center;
+}
+
+.quiz-container {
+  display: block;
 }
 
 .slide-container button {
