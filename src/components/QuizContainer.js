@@ -20,7 +20,6 @@ function QuizContainer(props) {
     const handleAnswer = (answer) => {
 
         if (answer === state.correctAnswer) {
-            console.log("test");
             setState(prevState => {
                 return {
                     ...prevState,

@@ -74,6 +74,21 @@ p {
   display: block;
 }
 
+.quiz-result-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 4em;
+  width: 15em;
+}
+
+.quiz-retake {
+  color: orange;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
 .slide-container button {
   background: none;
   border: none;

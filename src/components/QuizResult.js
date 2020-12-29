@@ -22,9 +22,11 @@ function QuizResult(props) {
                 message = "Excellent work!"
                 break;
         }
-
         return message;
-        
+    }
+
+    const refreshPage = () => {
+        window.location.reload();
     }
 
     const linkStyle = {
@@ -37,7 +39,11 @@ function QuizResult(props) {
         <div className="result-container">
             <h4>{renderMessage()}</h4>
             <p>You answered {score} out of {totalQuestions} questions correctly!</p>
-            <Link to="/" style={linkStyle}><p style={{marginTop: '5em'}}>Return to homepage</p></Link>
+            <div className="quiz-result-options">
+                <p className="quiz-retake" onClick={refreshPage}>Retake topic</p>
+                <Link to="/" style={linkStyle}><p>Return to homepage</p></Link>
+            </div>
+            
         </div>
     )
 }
