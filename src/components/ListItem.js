@@ -11,8 +11,8 @@ function ListItem(props) {
 
     return(
         <div>
-            <Link to={props.link}>
-            <p>{capitaliseFirstLetter(props.category)}</p>
+            <Link style={{ textDecoration: "none" }} to={props.link}>
+            <p className="subject-header">{capitaliseFirstLetter(props.category)}</p>
             <div className="img-container">   
                 <img src={'../images' + props.imgUrl} alt="broken"/>
             </div>

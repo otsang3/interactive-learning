@@ -13,6 +13,8 @@ code {
 }
 
 h2 {
+  margin: 0;
+  margin-bottom: 1.5em;
   text-align: center;
 }
 
@@ -107,7 +109,9 @@ p {
   text-shadow:0 0 4px rgba(255,255,255,0.6);
 }
 
-.test {
-  align-self: flex-end;
-  margin-right: 2.5em;
+.subject-header {
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 2em;
 }
