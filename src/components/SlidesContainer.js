@@ -36,7 +36,7 @@ function SlidesContainer(props) {
         <div className="slide-container">
             <p>{state.slides[state.slideNum - 1]}</p>
 
-            <div className="test">
+            <div className="slide-buttons">
             {state.slideNum > 1 &&
             <button onClick={handlePrevSlide}>Previous</button>
             }
