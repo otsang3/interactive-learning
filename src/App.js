@@ -7,7 +7,7 @@ import InteractiveDisplay from './components/InteractiveDisplay';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="app">
         <Switch>
           <Route exact path="/" render={() => (
             <Home/>
