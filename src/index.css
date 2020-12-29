@@ -70,7 +70,7 @@ p {
   text-align: center;
 }
 
-.quiz-container {
+.quiz-container, .result-container {
   display: block;
 }
 

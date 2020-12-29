@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function QuizResult(props) {
 
+    const score = props.state.score;
+    const totalQuestions = props.quiz.length;
+
     const renderMessage = () => {
 
-        const userScore = (props.state.score/props.quiz.length);
+        const userScore = (score/totalQuestions);
         let message = '';
 
         switch(true) {
@@ -23,9 +27,17 @@ function QuizResult(props) {
         
     }
 
+    const linkStyle = {
+        color: "orange",
+        fontSize: '0.80em',
+        textDecoration: 'inherit',
+    }
+
     return(
         <div className="result-container">
             <h4>{renderMessage()}</h4>
+            <p>You answered {score} out of {totalQuestions} questions correctly!</p>
+            <Link to="/" style={linkStyle}><p style={{marginTop: '5em'}}>Return to homepage</p></Link>
         </div>
     )
 }
